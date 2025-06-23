@@ -10,7 +10,7 @@ with open(os.path.join(PROJECT_DIR, "info.json"), encoding="utf-8") as f:
 
 st.title(data["title"])
 
-image_path = os.path.join(PROJECT_DIR, data.get("image", "preview.png"))
+image_path = os.path.join(PROJECT_DIR, data.get("image", "revit_api.png"))
 if os.path.exists(image_path):
     st.image(Image.open(image_path), use_container_width=True)
 
