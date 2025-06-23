@@ -3,34 +3,31 @@ import os
 import json
 from PIL import Image
 
-st.title("📂 My Projects ")
+st.title("📂 Projects")
 
 PROJECTS_DIR = "projects"
 
-# Sort folders alphabetically
 folders = sorted(os.listdir(PROJECTS_DIR))
 
 for folder in folders:
-    project_path = os.path.join(PROJECTS_DIR, folder)
-    info_path = os.path.join(project_path, "info.json")
+    path = os.path.join(PROJECTS_DIR, folder)
+    info_file = os.path.join(path, "info.json")
 
-    if os.path.isdir(project_path) and os.path.exists(info_path):
-        with open(info_path, "r", encoding="utf-8") as f:
+    if os.path.exists(info_file):
+        with open(info_file, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        image_path = os.path.join(project_path, data.get("image", "preview.png"))
-        col1, col2 = st.columns([1, 3])
+        slug = data.get("slug", folder)
+        summary = data.get("summary", "No summary provided")
+        image_path = os.path.join(path, data.get("image", "preview.png"))
 
+        col1, col2 = st.columns([1, 3])
         with col1:
             if os.path.exists(image_path):
                 st.image(Image.open(image_path), use_container_width=True)
-            else:
-                st.warning("❌ Image not found")
-
         with col2:
             st.subheader(data["title"])
-            st.markdown(data["description"])
-            if "link" in data:
-                st.markdown(f"[🔗 View Project]({data['link']})", unsafe_allow_html=True)
+            st.markdown(summary)
+            st.markdown(f"[🔍 View Full Project](?page=project_pages/{slug})")
 
         st.markdown("---")
