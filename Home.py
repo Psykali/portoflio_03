@@ -13,7 +13,7 @@ st.markdown("""
 I specialize in building scalable AI & ML pipelines and deploying them with Cloud/DevOps tools.
 
 - 🧠 AI & ML | 🛠️ Azure DevOps | 🧰 FastAPI & Terraform
-- 📫 Reach me: [LinkedIn](https://www.linkedin.com/in/sief-m-khalifa/) • [GitHub](https://github.com/Psykali) • [Medium](https://medium.com/@SKpsyktechdynamo)
+- 📫 Reach me: [LinkedIn](https://www.linkedin.com/in/sief-m-khalifa/) • [Mail](mailto:siefkhalefa@gmail.com)
 """)
 
 with open("assets/S_KHALIFA-CV.pdf", "rb") as file:

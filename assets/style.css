@@ -32,3 +32,19 @@ h1, h2, h3 {
   border-radius: 12px;
   background-color: #f0f4f8;
 }
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+
+.contact-box a {
+  color: #278ea5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
