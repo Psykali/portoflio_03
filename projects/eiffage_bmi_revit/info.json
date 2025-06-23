@@ -2,9 +2,7 @@
   "title": "Eiffage BIM + Revit Forecasting Platform",
   "description": "Built a predictive analytics platform that connects **Revit** model data with **machine learning pipelines** for smarter construction planning.\n\nUsed **GCP Compute**, managed databases, and developed a **Streamlit dashboard** backed by a **FastAPI service**. Tested various models including linear, ML, and deep learning. Chose ML for deployment due to performance-to-carbon-cost balance.\n\n**Key Highlights:**\n- Revit + FastAPI integration for automated BIM data extraction\n- Trained and evaluated ML and DL models using scikit-learn, XGBoost, LightGBM\n- Chose ML models for production to reduce carbon footprint while maintaining accuracy\n- Used extensive toolset: Pandas, Seaborn, joblib, GridSearchCV, SVMs, RandomForest, LGBM\n- Hosted on **GCP Compute**, with scalable data pipeline and secure API\n- Interactive frontend built with Streamlit\n\n📦 **Libraries**: scikit-learn, XGBoost, LightGBM, seaborn, matplotlib, pandas, joblib\n🔧 **Tools**: Revit, Python, FastAPI, Streamlit, GCP, openpyxl, sklearn\n🌱 **Why ML over DL**: nearly equal results, but lower cost and environmental impact",
   "image": "revit_api.png",
-  "link": "https://github.com/Psykali/BIM_revit"
-}
-{
+  "link": "https://github.com/Psykali/BIM_revit",
   "tags": [
     "Revit",
     "BIM",
