@@ -11,17 +11,23 @@ st.title("📬 Contact Me")
 st.markdown("""
 <div class="contact-box">
     <p>Feel free to reach out through any of the platforms below:</p>
-    <a href="https://github.com/Psykali" target="_blank">
-        <img src="assets/project_imgs/contact/github-logo.png" alt="GitHub" width="40" style="margin-right: 10px;">
-    </a>
-    <a href="https://medium.com/@SKpsyktechdynamo" target="_blank">
-        <img src="assets/project_imgs/contact/medium-logo.png" alt="Medium Blog" width="40" style="margin-right: 10px;">
-    </a>
-    <a href="https://www.linkedin.com/in/sief-m-khalifa/" target="_blank">
-        <img src="assets/project_imgs/contact/linkedin-logo.png" alt="LinkedIn" width="40" style="margin-right: 10px;">
-    </a>
-    <a href="mailto:siefkhalefa@gmail.com" target="_blank">
-        <img src="assets/project_imgs/contact/email-logo.png" alt="Email" width="40" style="margin-right: 10px;">
-    </a>
 </div>
 """, unsafe_allow_html=True)
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.image("assets/project_imgs/contact/github-logo.png", width=40)
+    st.markdown("[GitHub](https://github.com/Psykali)")
+
+with col2:
+    st.image("assets/project_imgs/contact/medium-logo.png", width=40)
+    st.markdown("[Medium](https://medium.com/@SKpsyktechdynamo)")
+
+with col3:
+    st.image("assets/project_imgs/contact/linkedin-logo.png", width=40)
+    st.markdown("[LinkedIn](https://www.linkedin.com/in/sief-m-khalifa/)")
+
+with col4:
+    st.image("assets/project_imgs/contact/email-logo.png", width=40)
+    st.markdown("[Email](mailto:siefkhalefa@gmail.com)")
