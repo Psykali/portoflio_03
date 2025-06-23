@@ -25,13 +25,35 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# 👤 About Me Section
+st.markdown("---")
+st.subheader("👤 About Me")
+st.markdown("""
+I'm a data scientist and ML/AI engineer with hands-on experience in Azure Cloud, DevOps pipelines, and production-grade AI solutions.
+
+Over the last 6+ years, I’ve:
+- Built ML models for stock prediction, sales forecasting, and resource planning
+- Automated infrastructure with Terraform, Ansible, and Azure DevOps
+- Created Streamlit dashboards for real-time model interaction
+- Integrated FastAPI with Revit for data-driven construction workflows
+
+🧪 I believe in using data not just to analyze the past, but to build the future.
+
+🌍 I’ve worked with companies like **Eiffage**, **JSI Council**, **Rexel**, and **Hardis Group** — across France and Saudi Arabia.
+
+Languages: 🇬🇧 English | 🇫🇷 French | 🇸🇦 Arabic
+Certifications: AZ-104, AZ-500, AI-900, and more
+""")
+
 st.write("")
+
+
+# 🔗 Socials and CV
 st.markdown("""
 <div style='text-align: center; margin-top: 2em;'>
     <p style='font-size:18px; color:#278ea5;'>📬 Email me directly at</p>
 </div>
 """, unsafe_allow_html=True)
-# 🔗 Socials and CV
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     st.markdown("[![Gmail](https://img.shields.io/badge/Gmail-red?style=for-the-badge&logo=gmail)](mailto:siefkhalefa@gmail.com)", unsafe_allow_html=True)

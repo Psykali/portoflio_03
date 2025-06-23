@@ -10,5 +10,3 @@ if page == "Home":
     import Home
 elif page == "Projects":
     import Projects
-elif page == "About":
-    import About
