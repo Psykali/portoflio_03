@@ -1,6 +1,6 @@
 {
   "title": "Taxi Fare Analysis",
-  "slug": "Taxi Fare Analysis",
+  "slug": "TaxiFareAnalysis",
   "summary": "Dynamic fare prediction using geolocation and time-based pricing logic.",
   "description": "<<< full rich markdown >>>",
   "image": "streamlit_dash.png",
