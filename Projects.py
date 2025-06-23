@@ -28,6 +28,6 @@ for folder in folders:
         with col2:
             st.subheader(data["title"])
             st.markdown(summary)
-            st.markdown(f"[🔍 View Full Project](?page=project_pages/{slug})")
+            st.page_link(f"pages/{slug.replace('_', ' ').title()}.py", label="🔍 View Full Project")
 
         st.markdown("---")
