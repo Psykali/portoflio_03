@@ -30,4 +30,5 @@ for folder in folders:
             st.markdown(summary)
             st.page_link(f"project_pages/{slug}.py", label="🔍 View Full Project")
 
+
         st.markdown("---")
