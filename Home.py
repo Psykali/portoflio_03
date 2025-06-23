@@ -7,7 +7,7 @@ def local_css(file_name):
 
 local_css("assets/style.css")
 
-# 1. HEADLINE SECTION
+# 🧠 Intro Header
 st.markdown("""
 <div style='text-align: center; padding-top: 2em;'>
     <h1 style='font-size: 42px;'>👋 Hi, I'm <span style='color:#278ea5;'>S. Khalifa</span></h1>
@@ -18,7 +18,7 @@ st.markdown("""
 
 st.write("")
 
-# 2. BADGES & TAGLINE
+# 🏷️ Badge Tags
 st.markdown("""
 <div style='text-align: center; font-size: 16px;'>
     🧠 AI & ML • ☁️ Azure Cloud • 🔧 FastAPI & Terraform • 📊 Streamlit Dashboards
@@ -27,7 +27,7 @@ st.markdown("""
 
 st.write("")
 
-# 3. ACTION LINKS (GITHUB, MEDIUM, LINKEDIN, CV)
+# 🔗 Socials and CV
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/Psykali)", unsafe_allow_html=True)
@@ -39,19 +39,44 @@ with col4:
     with open("assets/S_KHALIFA-CV.pdf", "rb") as f:
         st.download_button("📄 Download CV", f, file_name="S_KHALIFA-CV.pdf")
 
-# 4. FEATURED PROJECTS PREVIEW
-st.markdown("---")
-st.subheader("🚀 Featured Work")
-
+# 📬 Email Contact Section
 st.markdown("""
-✅ **JSI Stock Forecasting**: ML model improved inventory accuracy by 18%
-✅ **Revit + FastAPI**: Integrated BIM data into a prediction platform
-✅ **DevOps Automation**: Cut server setup time by 40% using Terraform
-""")
+<div style='text-align: center; margin-top: 2em;'>
+    <p style='font-size:18px; color:#278ea5;'>📬 Email me directly at</p>
+    <a href="mailto:siefkhalefa@gmail.com" style='font-size: 20px; font-weight: bold;'>siefkhalefa@gmail.com</a>
+</div>
+""", unsafe_allow_html=True)
 
-# 5. CALL TO ACTION
+# 🚀 Featured Work Preview
+st.markdown("## 🚀 Featured Work")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.image("assets/project_imgs/jsi_stock.png", use_column_width=True)
+    st.markdown(
+        "[**JSI Stock Forecasting**](#projects)",
+        unsafe_allow_html=True
+    )
+
+with col2:
+    st.image("assets/project_imgs/revit_api.png", use_column_width=True)
+    st.markdown(
+        "[**Revit + FastAPI Integration**](#projects)",
+        unsafe_allow_html=True
+    )
+
+with col3:
+    st.image("assets/project_imgs/azure_terraform.png", use_column_width=True)
+    st.markdown(
+        "[**DevOps Infra Automation**](#projects)",
+        unsafe_allow_html=True
+    )
+
+
+# CTA Footer
 st.markdown("""
 <div style='text-align: center; padding-top: 1.5em; color: #888; font-size: 16px;'>
-    Want to collaborate, hire, or just say hi? 👉 Check out the [Contact] page!
+    Let’s build something awesome together. 🚀
 </div>
 """, unsafe_allow_html=True)
