@@ -3,7 +3,7 @@ import json
 import os
 from PIL import Image
 
-PROJECT_DIR = "projects/taxi_fare_analysis"
+PROJECT_DIR = "../projects/taxi_fare_analysis"
 
 with open(os.path.join(PROJECT_DIR, "info.json"), encoding="utf-8") as f:
     data = json.load(f)
