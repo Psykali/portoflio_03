@@ -1,42 +1,36 @@
 import streamlit as st
-from pathlib import Path
+import os
+import json
+from PIL import Image
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+st.title("📂 My Projects ")
 
-local_css("assets/style.css")
+PROJECTS_DIR = "projects"
 
-projects = [
-    {
-        "title": "Stock Forecasting Model (JSI Council)",
-        "desc": "Improved stock accuracy by 18%, predicted peak sales and staffing periods using ML.",
-        "img": "assets/project_imgs/jsi_stock.jpg"
-    },
-    {
-        "title": "Revit + FastAPI Integration",
-        "desc": "Pipeline to extract and train models on Revit data with 95–98% accuracy. Connected to FastAPI.",
-        "img": "assets/project_imgs/revit_api.png"
-    },
-    {
-        "title": "Interactive Streamlit Dashboard",
-        "desc": "Streamlit dashboard for live ML model interaction (Eiffage Construction).",
-        "img": "assets/project_imgs/streamlit_dash.png"
-    },
-    {
-        "title": "Azure Infra Provisioning (Terraform & Ansible)",
-        "desc": "Cut setup time by 40% across 350+ servers and optimized cloud costs by 30%.",
-        "img": "assets/project_imgs/azure_terraform.png"
-    }
-]
+# Sort folders alphabetically
+folders = sorted(os.listdir(PROJECTS_DIR))
 
-st.title("📂 Projects")
+for folder in folders:
+    project_path = os.path.join(PROJECTS_DIR, folder)
+    info_path = os.path.join(project_path, "info.json")
 
-for p in projects:
-    st.markdown(f"""
-    <div class='project-card'>
-        <img src="{p['img']}" width="100%" style="border-radius: 12px; margin-bottom: 10px;" />
-        <h3>{p["title"]}</h3>
-        <p>{p["desc"]}</p>
-    </div>
-    """, unsafe_allow_html=True)
+    if os.path.isdir(project_path) and os.path.exists(info_path):
+        with open(info_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        image_path = os.path.join(project_path, data.get("image", "preview.png"))
+        col1, col2 = st.columns([1, 3])
+
+        with col1:
+            if os.path.exists(image_path):
+                st.image(Image.open(image_path), use_container_width=True)
+            else:
+                st.warning("❌ Image not found")
+
+        with col2:
+            st.subheader(data["title"])
+            st.markdown(data["description"])
+            if "link" in data:
+                st.markdown(f"[🔗 View Project]({data['link']})", unsafe_allow_html=True)
+
+        st.markdown("---")

@@ -29,13 +29,33 @@ st.markdown("""
 st.markdown("---")
 st.subheader("👤 About Me")
 st.markdown("""
-I'm a data scientist and ML/AI engineer with hands-on experience in Azure Cloud, DevOps pipelines, and production-grade AI solutions.
+I'm a **Data Scientist & AI/ML Engineer** with deep expertise in **DevOps**, **CloudOps**, and production-grade automation. I architect, build, and run systems that transform data into value — securely, at scale, and with minimum friction.
 
-Over the last 6+ years, I’ve:
-- Built ML models for stock prediction, sales forecasting, and resource planning
-- Automated infrastructure with Terraform, Ansible, and Azure DevOps
-- Created Streamlit dashboards for real-time model interaction
-- Integrated FastAPI with Revit for data-driven construction workflows
+---
+
+🔍 **Data Science & Analysis**
+I design machine learning models for forecasting, optimization, and automation. From raw data wrangling to feature engineering and model deployment — I work across the full lifecycle using **Python**, **Pandas**, **Scikit-learn**, **TensorFlow**, and visualization tools like **Power BI** and **Matplotlib**.
+
+I’ve developed solutions for:
+- Stock and sales forecasting
+- Material demand prediction in construction
+- Resource optimization across distributed systems
+
+📊 My approach combines statistical rigor with real-world business context — helping teams make decisions backed by data, not just instinct.
+
+---
+
+🔧 **DevOps & Cloud Architecture**
+I’ve built cloud-native systems on **Azure**, automated infrastructure with **Terraform** & **Ansible**, and optimized CI/CD using **GitHub Actions**, **Azure DevOps**, and **GitLab**.
+
+Highlights:
+- Provisioned and managed 300+ servers
+- Built hybrid infrastructure for live ML model serving
+- Secured cloud environments using **RBAC**, **Vault**, and **Azure Lighthouse**
+
+☁️ I don’t just build models — I ensure they’re deployed, monitored, and cost-efficient in production.
+
+---
 
 🧪 I believe in using data not just to analyze the past, but to build the future.
 
