@@ -1,0 +1,17 @@
+{
+  "title": "Taxi Fare Prediction App",
+  "description": "Built a full-stack interactive ML app that predicts taxi fares in real-time using pickup/dropoff addresses, vehicle type, and calendar context (weekend/night/holiday).\n\n**App Highlights:**\n- 📍 Address-to-coordinates geocoding via OpenStreetMap (Nominatim)\n- 🛣️ Live routing via OSRM for distance + duration estimation\n- 💡 Dynamic pricing engine: base fare, passenger multiplier, time-of-day/week/holiday surcharges\n- 🔁 Custom vehicle logic with image-based classification (City Car, SUV, Mini Bus)\n- 📉 Backend model predictions served via FastAPI\n- 🗺️ Real-time route map generated with Folium in Streamlit\n\n**Engineering & ML:**\n- Cleaned and trained model on NYC taxi fare dataset using Random Forest, XGBoost, and linear baselines\n- Applied feature engineering: distance (Haversine), datetime features, surge adjustments\n- Hosted front end on **Render.com**, backend via custom API\n\n📦 **Libraries**: pandas, scikit-learn, seaborn, matplotlib, joblib, FastAPI, Streamlit, Folium\n🌐 [Live Demo](https://taxifare-website.onrender.com) | [📁 GitHub Repo](https://github.com/Psykali/taxifare-website.git)",
+  "image": "preview.png",
+  "link": "https://github.com/Psykali/taxifare-website.git",
+  "tags": [
+    "Machine Learning",
+    "Streamlit",
+    "FastAPI",
+    "Geocoding",
+    "Taxi Fare Prediction",
+    "Full Stack",
+    "OpenStreetMap"
+  ],
+  "type": "project",
+  "status": "completed"
+}
