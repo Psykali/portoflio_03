@@ -20,6 +20,7 @@ for folder in folders:
         slug = data.get("slug", folder)
         summary = data.get("summary", "No summary provided")
         image_path = os.path.join(path, data.get("image", "preview.png"))
+        page_path = os.path.join(path, "detail.py")
 
         col1, col2 = st.columns([1, 3])
         with col1:
@@ -28,6 +29,7 @@ for folder in folders:
         with col2:
             st.subheader(data["title"])
             st.markdown(summary)
-            st.page_link(f"pages/{slug.replace('_', ' ').title()}.py", label="🔍 View Full Project")
+            if os.path.exists(page_path):
+                st.page_link(f"{PROJECTS_DIR}/{folder}/detail.py", label="🔍 View Full Project")
 
         st.markdown("---")
