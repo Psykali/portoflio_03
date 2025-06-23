@@ -26,26 +26,25 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("")
-
-# 🔗 Socials and CV
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/Psykali)", unsafe_allow_html=True)
-with col2:
-    st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sief-m-khalifa/)", unsafe_allow_html=True)
-with col3:
-    st.markdown("[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium)](https://medium.com/@SKpsyktechdynamo)", unsafe_allow_html=True)
-with col4:
-    with open("assets/S_KHALIFA-CV.pdf", "rb") as f:
-        st.download_button("📄 Download CV", f, file_name="S_KHALIFA-CV.pdf")
-
-# 📬 Email Contact Section
 st.markdown("""
 <div style='text-align: center; margin-top: 2em;'>
     <p style='font-size:18px; color:#278ea5;'>📬 Email me directly at</p>
-    <a href="mailto:siefkhalefa@gmail.com" style='font-size: 20px; font-weight: bold;'>siefkhalefa@gmail.com</a>
 </div>
 """, unsafe_allow_html=True)
+# 🔗 Socials and CV
+col1, col2, col3, col4, col5 = st.columns(4)
+with col1:
+    st.markdown("[![Gmail](https://img.shields.io/badge/Gmail-red?style=for-the-badge&logo=gmail)](mailto:siefkhalefa@gmail.com)", unsafe_allow_html=True)
+with col2:
+    st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sief-m-khalifa/)", unsafe_allow_html=True)
+with col3:
+    st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)](https://github.com/Psykali)", unsafe_allow_html=True)
+with col4:
+    st.markdown("[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium)](https://medium.com/@SKpsyktechdynamo)", unsafe_allow_html=True)
+with col5:
+    with open("assets/S_KHALIFA-CV.pdf", "rb") as f:
+        st.download_button("📄 Download CV", f, file_name="S_KHALIFA-CV.pdf")
+
 
 # 🚀 Featured Work Preview
 st.markdown("## 🚀 Featured Work")
