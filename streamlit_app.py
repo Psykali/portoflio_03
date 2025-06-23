@@ -4,7 +4,7 @@ from pathlib import Path
 st.set_page_config(page_title="S. Khalifa Portfolio", layout="wide")
 
 st.sidebar.title("Navigate")
-page = st.sidebar.radio("", ["Home", "Projects", "About"])
+page = st.sidebar.radio("", ["Home", "Projects"])
 
 if page == "Home":
     import Home
