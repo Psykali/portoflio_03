@@ -21,7 +21,7 @@ st.write("")
 # 🏷️ Badge Tags
 st.markdown("""
 <div style='text-align: center; font-size: 16px;'>
-    🧠 AI & ML • ☁️ Azure Cloud • 🔧 FastAPI & Terraform • 📊 Streamlit Dashboards
+    🧠 AI & ML • ☁️ Azure Cloud • 🔧 Devops • 📊 Data Science & Analyse
 </div>
 """, unsafe_allow_html=True)
 
@@ -39,9 +39,9 @@ Over the last 6+ years, I’ve:
 
 🧪 I believe in using data not just to analyze the past, but to build the future.
 
-🌍 I’ve worked with companies like **Eiffage**, **JSI Council**, **Rexel**, and **Hardis Group** — across France and Saudi Arabia.
+🌍 I’ve worked with companies like **Eiffage**, **JSI Council**, **Rexel**, **Hardis Group**, **GL Events**, **Energizer**, and Others — across France, Egypt, Türkiye and Saudi Arabia.
 
-Languages: 🇬🇧 English | 🇫🇷 French | 🇸🇦 Arabic
+Languages: 🇬🇧 English | 🇫🇷 French | 🇸🇦 Arabic \n
 Certifications: AZ-104, AZ-500, AI-900, and more
 """)
 
