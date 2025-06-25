@@ -10,6 +10,6 @@ page = st.sidebar.radio("", ["Home", "Projects"])
 
 
 if page == "Home":
-    import Home
+    import 01-Home
 elif page == "Projects":
-    import Projects
+    import 02-Projects
