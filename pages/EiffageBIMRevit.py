@@ -18,3 +18,5 @@ st.markdown(data["description"], unsafe_allow_html=True)
 
 if data.get("link"):
     st.markdown(f"[📁 GitHub Repo]({data['link']})", unsafe_allow_html=True)
+
+st.markdown("[⬅️ Back to Projects](Projects)")
