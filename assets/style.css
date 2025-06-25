@@ -49,30 +49,17 @@ h1 {
   text-decoration: underline;
 }
 
-body {
-    background-image: url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?fit=crop&w=1600&q=80");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-section.main > div {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-body {
-  background-image: url("background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-section.main > div {
-  background-color: rgba(0, 0, 0, 0.6); /* Optional dark overlay */
-  padding: 2rem;
-  border-radius: 10px;
-}
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("assets/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
