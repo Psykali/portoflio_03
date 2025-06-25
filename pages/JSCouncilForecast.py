@@ -12,7 +12,7 @@ with open(os.path.join(PROJECT_DIR, "info.json"), encoding="utf-8") as f:
 st.title(data["title"])
 
 # Show image
-img_path = os.path.join(PROJECT_DIR, data.get("image", "preview.png"))
+img_path = os.path.join(PROJECT_DIR, data.get("image", "jsi_stock.png"))
 if os.path.exists(img_path):
     st.image(Image.open(img_path), use_container_width=True)
 
