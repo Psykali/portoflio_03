@@ -1,6 +1,23 @@
 import streamlit as st
 from pathlib import Path
 
+###
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("assets/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+###
+
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
