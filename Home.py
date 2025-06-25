@@ -108,28 +108,28 @@ with col5:
 # 🚀 Featured Work Preview
 st.markdown("## 🚀 Featured Work")
 
-col1, col2, col3 = st.columns(3)
+# col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.image("assets/project_imgs/jsi_stock.png", use_column_width=True)
-    st.markdown(
-        "[**JSI Stock Forecasting**](#projects)",
-        unsafe_allow_html=True
-    )
+# with col1:
+#     st.image("assets/project_imgs/jsi_stock.png", use_column_width=True)
+#     st.markdown(
+#         "[**JSI Stock Forecasting**](#projects)",
+#         unsafe_allow_html=True
+#     )
 
-with col2:
-    st.image("assets/project_imgs/revit_api.png", use_column_width=True)
-    st.markdown(
-        "[**Revit + FastAPI Integration**](#projects)",
-        unsafe_allow_html=True
-    )
+# with col2:
+#     st.image("assets/project_imgs/revit_api.png", use_column_width=True)
+#     st.markdown(
+#         "[**Revit + FastAPI Integration**](#projects)",
+#         unsafe_allow_html=True
+#     )
 
-with col3:
-    st.image("assets/project_imgs/azure_terraform.png", use_column_width=True)
-    st.markdown(
-        "[**DevOps Infra Automation**](#projects)",
-        unsafe_allow_html=True
-    )
+# with col3:
+#     st.image("assets/project_imgs/azure_terraform.png", use_column_width=True)
+#     st.markdown(
+#         "[**DevOps Infra Automation**](#projects)",
+#         unsafe_allow_html=True
+#     )
 
 
 # CTA Footer
