@@ -1,6 +1,6 @@
 {
   "title": "Azure Monitoring & Workbooks",
-  "slug": "Monitoring_Workbooks",
+  "slug": "06-Monitoring_Workbooks",
   "summary": "Designed monitoring dashboards and workbooks for enterprise cloud ops.",
   "description": "Developed end-to-end **monitoring systems** for Azure-based cloud environments using Workbooks, Alerts, and Azure Monitor for Hardis clients including **GL Events**, **Energizer**, **LNR**, and others.\n\n- Created actionable dashboards for cost, usage, and failure detection\n- Integrated alerting mechanisms across distributed cloud environments\n- Trained clients on interpreting live monitoring data",
   "image": "preview.png",

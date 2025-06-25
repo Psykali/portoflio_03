@@ -1,6 +1,6 @@
 {
   "title": "Eiffage BIM + Revit Forecasting",
-  "slug": "EiffageBIMRevit",
+  "slug": "03-eiffage_bmi_revit",
   "summary": "BIM-integrated ML dashboard for material demand forecasting.",
   "description": "Full detailed description here...",
   "image": "revit_api.png",

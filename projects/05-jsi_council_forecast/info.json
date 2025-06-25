@@ -1,8 +1,8 @@
 {
   "title": "JSI Council – Stock Prediction System",
-  "slug": "JSICouncilForecast",
+  "slug": "05-jsi_council_forecast",
   "summary": "Built a stock prediction engine to optimize inventory, promotions, and resource planning.",
   "description": "Developed a comprehensive stock forecasting system for **JSI Council**, combining machine learning models with sales data analysis.\n\n**Project Impact:**\n- 📦 Improved inventory precision by **18%**\n- 📈 Predicted peak sales periods, increasing promotion effectiveness by **12%**\n- 🚚 Enhanced stock distribution with a **15% reduction in inefficiencies**\n- 🧠 Forecasted staffing needs, improving resource allocation\n\n**Tech & Tools:**\n- ML Models: Linear Regression, Random Forest, Gradient Boosting\n- Data Cleaning: Pandas, Scikit-learn\n- Visualization: Seaborn, Matplotlib\n- Deployment: Streamlit\n\n**Code Snippet (Model Training):**\n```python\nfrom sklearn.ensemble import RandomForestRegressor\nmodel = RandomForestRegressor(n_estimators=100)\nmodel.fit(X_train, y_train)\npredictions = model.predict(X_test)\n```",
-  "image": "jsi-stock.png",
+  "image": "jsi_stock.png",
   "link": ""
 }
