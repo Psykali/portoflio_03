@@ -9,7 +9,11 @@ st.sidebar.title("Navigate")
 page = st.sidebar.radio("", ["Home", "Projects"])
 
 
+# if page == "Home":
+#     import 01-Home
+# elif page == "Projects":
+#     import 02-Projects
 if page == "Home":
-    import 01-Home
+    exec(open("pages/01-Home.py").read())
 elif page == "Projects":
-    import 02-Projects
+    exec(open("pages/02-Projects.py").read())
