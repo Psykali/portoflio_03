@@ -6,7 +6,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("assets/background.png");
+        background-image: url("assets/background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
