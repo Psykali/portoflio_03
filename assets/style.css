@@ -71,9 +71,8 @@ body {
   color: white;
 }
 
-/* Optional: content overlay to improve contrast */
 section.main > div {
-  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.6); /* Optional dark overlay */
   padding: 2rem;
   border-radius: 10px;
 }
