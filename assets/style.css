@@ -61,3 +61,19 @@ section.main > div {
     padding: 2rem;
     border-radius: 10px;
 }
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Optional: content overlay to improve contrast */
+section.main > div {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 2rem;
+  border-radius: 10px;
+}
