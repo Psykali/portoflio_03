@@ -14,6 +14,6 @@ page = st.sidebar.radio("", ["Home", "Projects"])
 # elif page == "Projects":
 #     import 02-Projects
 if page == "Home":
-    exec(open("pages/01-Home.py").read())
+    exec(open("01-Home.py").read())
 elif page == "Projects":
-    exec(open("pages/02-Projects.py").read())
+    exec(open("02-Projects.py").read())
