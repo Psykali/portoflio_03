@@ -1,7 +1,8 @@
 import streamlit as st
 from pathlib import Path
 
-st.set_page_config(page_title="S. Khalifa Portfolio", layout="wide")
+## st.set_page_config(page_title="S. Khalifa Portfolio", layout="wide")
+st.set_page_config(page_title="Main page", page_icon="📌", layout="wide")
 
 st.sidebar.title("Navigate")
 page = st.sidebar.radio("", ["Home", "Projects"])
